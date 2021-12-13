@@ -10,6 +10,196 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/lapweb.css">
     <script src="./jquery-3.6.0.min.js"></script>
+    <style>
+        #main-sign-up {
+  height: 550px;
+}
+
+#wrapper{
+  width: 100%;
+  height: 100%;
+}
+#form-login{
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 106, 41, 0.1);
+  flex-grow: 1;
+  padding: 30px 30px 40px;
+  box-shadow: 0px 0px 17px 2px rgba(91, 88, 238, 0.8);
+  text-emphasis-color: #000;
+}
+.form-heading{
+  font-size: 25px;
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-group{
+  border-bottom: 1px solid rgb(8, 8, 8);
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.form-group i{
+  color: rgb(0, 0, 0);
+
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.form-input{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  flex-grow: 1;
+}
+.form-input::placeholder{
+  color: #000000;
+}
+#eye i{
+  padding-right: 0;
+  cursor: pointer;
+}
+.form-submit{
+  background: transparent;
+  border: 1px solid #000000;
+  color: rgb(211, 22, 22);
+  width: 100%;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  transition: 0.25s ease-in-out;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.form-submit:hover{
+  border: 1px solid #54a0ff;
+}
+.col1{
+  width: 20px;
+}
+
+.icon{
+  width: 35px;
+  height:20px;
+  background-color: #cddc39;
+  color: #fff;
+  padding: 2px; 
+}
+
+.col-spacer {
+  min-height: 8rem;
+}
+
+#form {
+  min-width: 20px;
+  max-width: 1000px;
+  height: 500px;
+  color: #fafafa;
+  border: 2px solid;
+  border-color: #35eaff;
+
+  background-color: #3f3f3f21;
+  border-radius: 5px;
+}
+#form .left {
+  flex: 1 60%;
+  border-right: 2px solid;
+  border-color: #35eaff;
+}
+#form .right {
+  flex: 1 40%;
+}
+
+.twitter {
+  border-color: #1da1f2;
+  text-shadow: 0 0 10px #1da1f2;
+  box-shadow: inset 0 0 15px #1da1f2, 0 0 15px #1da1f2;
+ 
+}
+.twitter,.facebook,.googleplus,.linkedin,.dangnhap {
+  margin-bottom: 20px;
+  height: 50px;
+  color: #000;
+
+}
+.twitter i {
+  color:#000;
+}
+.twitter:focus,
+.twitter:hover,
+.twitter:active {
+  background: #1da1f2;
+}
+.facebook {
+  border-color: #0084ff;
+  text-shadow: 0 0 10px #0084ff;
+  box-shadow: inset 0 0 15px #0084ff, 0 0 15px #0084ff;
+}
+.facebook i {
+  color: #000;
+}
+.facebook:focus,
+.facebook:hover,
+.facebook:active {
+  background: #0084ff;
+}
+.googleplus {
+  border-color: #dd4b39;
+  text-shadow: 0 0 10px #dd4b39;
+  box-shadow: inset 0 0 15px #dd4b39, 0 0 15px #dd4b39;
+}
+.googleplus i {
+  color: #000;
+}
+.googleplus:focus,
+.googleplus:hover,
+.googleplus:active {
+  background: #dd4b39;
+}
+.linkedin {
+  border-color: #0077b5;
+  text-shadow: 0 0 10px #0077b5;
+  box-shadow: inset 0 0 15px #0077b5, 0 0 15px #0077b5;
+}
+.linkedin i {
+  color: #000;
+}
+.linkedin:focus,
+.linkedin:hover,
+.linkedin:active {
+  background: #0077b5;
+}
+
+.glow {
+  color: #edfdff;
+  box-shadow: 0 0 15px #00e5ff;
+}
+.flex {
+  display: flex;
+}
+.flex .col {
+  padding: 2rem;
+}
+.flex.col-2 > * {
+  flex: 50%;
+}
+.flex:not(.column):not(.row) {
+  align-items: center;
+}
+.flex.space {
+  justify-content: space-between;
+}
+.flex.column {
+  flex-direction: column;
+}
+
+.sign-up-display {
+  position: relative;
+  left: -200px;
+  width: 1700px;
+}
+    </style>
 </head>
 <body>
     <header>
