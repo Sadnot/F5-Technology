@@ -171,7 +171,7 @@ function showCart(){
           data.value= key;
           a.setAttributeNode(href);
           a.setAttributeNode(data);
-          a.innerHTML= '<i class="fa fa-trash icon-pink"></i>';
+          a.innerHTML= '<i  class="fa fa-trash icon-pink"></i>';
           a.onclick=function(){removeCart(this);}
           td.appendChild(a);
           td.style.textAlign="right";

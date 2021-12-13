@@ -18,6 +18,7 @@
         }
         table, td, th{
             border: 1px solid black;
+            padding: 8px;
         }
         h1{
             color: #ed4190;
@@ -26,28 +27,61 @@
 	        line-height: 34px;
             text-transform: uppercase;
         }
-        html{
-            font-size: 100%;
-        }
+
         h1:after {
             content: " ";
             display: block;
             position: relative;
             left: 50%;
-            /* background: #cc0000; */
             height: 3px;
             width: 200px; 
             transform: skewX(-12deg) translateX(-50%);
-            background: radial-gradient(#cddc39, #fff);
+            background: radial-gradient(#6df05c, #fff);
         }
         main{
             width: 1024px;
+            height: auto;
             margin:0 auto;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .h1 {
+            margin: 20px 0px;
+            color: rgb(224,50,50);
+        }
+
+        #header {
+            height: 164px;
         }
     </style>
 </head>
+
 <body onload="showCart()">
-    <header>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+      </div>
+    <header id="header">
         <div class="header-nav col_3-6-3">
             <div>
                 <a href="#trangchulw">
@@ -128,13 +162,13 @@
                     <a href="gioithieulw.html">Giới Thiệu</a>
                     <a href="sanphamlw.html">Sản Phẩm</a>
                     <a href="tintuclw.html">Tin Tức</a>
-                    <a href="lienhelw.html">Liên Hệ</a>  
+                    <a href="lienhelw.html">Liên Hệ</a>
                 </div>
             </div>
         </nav>    
     </header>
     <main>
-        <h1 >Chi Tiết Đơn Hàng</h1>
+        <h1 class="h1">Chi Tiết Đơn Hàng</h1>
         <table style="width:100%">
             <thead>
                 <tr>
@@ -143,7 +177,7 @@
                     <th>Số lượng</th>
                     <th>Giá</th>
                     <th>Thành tiền</th>
-                    <th></th>
+                    <th>Xoá sản phẩm</th>
                 </tr>
             </thead>
             <tbody id="kiet">

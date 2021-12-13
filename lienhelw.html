@@ -1,15 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Ký Thành Viên</title>
+    <title>Liên Hệ Với F5</title>
     <link rel="icon" type="image/png" sizes="18x18" href="./assets/img/coollogo_com-97542231.png">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/lapweb.css">
     <script src="./jquery-3.6.0.min.js"></script>
+    <style>
+
+        input {
+            height: 30px;
+        }
+
+        select {
+            height: 30px;
+        }
+
+        button {
+            height: 36px;
+            width: 60px;
+            background-color: #00aeff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .sign-up-icon_text {
+	position: relative;
+	top: 38px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contact-img {
+	position: relative;
+	left: -28px;
+    top: 2px;
+	width: 35px;
+	height: 25px;
+	padding: 4px 12px;
+	background-color: rgb(247, 247, 247);
+	color: #ed4190;
+}
+
+.contact-text {
+	position: relative;
+    left: -20px;
+}
+.col-full {
+  display: grid;
+width: 100%;
+justify-content: center;
+}
+.sign-up-icon {
+	padding: 5px 12px;
+	color: ivory;
+	background-color: rgb(224, 50, 50);
+}
+.form-wrap {
+    margin: 20px 0px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0px;
+}
+    </style>
+    
 </head>
 <body>
     <header>
@@ -108,6 +195,7 @@
                         </span>
                     </a>
                 </div>
+
         </div>
         <nav class="header-nav-page">
             <div class="header-nav-wrap">
@@ -116,77 +204,76 @@
                     <a href="gioithieulw.html">Giới Thiệu</a>
                     <a href="sanphamlw.html">Sản Phẩm</a>
                     <a href="tintuclw.html">Tin Tức</a>
-                    <a href="lienhelw.html">Liên Hệ</a>
+                    <a href="lienhelw.html">Liên Hệ</a>  
                 </div>
             </div>
         </nav>    
     </header>
-
-    <main id="main-sign-up">
-        <div class="main-content-wrapper">
-            <div class="container">
-                <div class="container-left">
-                </div> 
-<!-- Begin:-->
-           
-<div class="flex col-2 row" id="form">
-    <div class="left col">
-        
-        <div id="wrapper">
-            <form onsubmit="return formValidatedangki(this);" name="log-in" action="" method="post" enctype="">
-                <h1 style="color: black;" class="form-heading">đăng kí tài khoản</h1>
-                <div class="form-group">
-                    <i class="far fa-user"></i>
-                    <input id="iddk" type="text" class="form-input" placeholder="Tên đăng nhập">
+    <main>
+        <h1>Liên hệ</h1>
+        <div class="form-wrap col-full">
+            <div  class="contact">
+                <div>
+                    <img src="./assets/img/pos.jpg" class="contact-img" alt="">
                 </div>
-                <div class="form-group">
-                    <i class="fas fa-envelope "></i>
-                    <input    id="email" type="text" name="email" class="form-input" placeholder="mail">
+                <div class="contact-text">
+                    <p>
+                        <strong>Địa chỉ: 0123, Tòa Nhà ABC, TP.Cần Thơ.</strong>
+                        Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
+                     </p>
                 </div>
-                <div class="form-group">
-                    <i class="fas fa-key"></i>
-                    <input id="pswdk1"type="password" class="form-input" placeholder="Mật khẩu">
-                    <div id="eye">
-                        <i class="far fa-eye"></i>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <i class="fas fa-key"></i>
-                    <input id="pswdk2" type="password" class="form-input" placeholder="nhập lại Mật khẩu">
-                    <div id="eye2">
-                        <i class="far fa-eye"></i>
-                    </div>
-                </div>
-                <input style="color: rgb(0, 0, 0);" type="submit" value="Đăng kí" class="form-submit">
-               
-                <font color="black" size="+1"> 
-                    Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản & quyền riêng tư của chúng tôi</a>
-                    <div>
-                      <a href="#">Quên mật khẩu?</a>
-                    chưa có tài khoản <a href="#">Đăng ký!</a>  
-                    </div>
-             </font>
-            </form>
-            
-
-        
-    </div>  
-    </div>
-    <div class="right col flex column">
-      <div class="col-spacer"></div>
-      <button class="twitter "><i class="fab fa-twitter fa-fw"></i>Sign in with Twitter</button>
-      <button class="facebook "><i class="fab fa-facebook-f fa-fw"></i>Sign in with Facebook</button>
-      <button class="googleplus "><i class="fab fa-google-plus-g fa-fw"></i>Sign in with Google+</button>
-      <button class="linkedin "><i class="fab fa-linkedin-in fa-fw"></i>Sign in with Linkedin</button>
-    </div>
-  </div>
-
-
-<!-- End:  -->
-                        
-        
+            </div>
+            <div class="col-full">
+                <form action="" method="post" enctype="multipart/form-data">
+                     <h2>Góp ý</h2>
+                     <table >
+                         <tr>
+                             <td><label for="name"><i class="sign-up-icon far fa-user"></i></label></td>
+                             <td colspan="2">
+                                 <input type="text" class="input-btn" id="name" name="fname" size="40%" placeholder="Vui lòng nhập tên của bạn" minlength="4" required/>
+                             </td>
+                         </tr> 
+         
+                         <tr>
+                             <td><label for="email"><i class="sign-up-icon far fa-envelope"></i></label></td>
+                             <td colspan="2">
+                                 <input type="text" class="input-btn" id="email" name="mail" size="40%" placeholder="Vui lòng nhập địa chỉ Email" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required/>
+                             </td>
+                         </tr> 
+         
+                         <tr>
+                             <td><i class="sign-up-icon fas fa-bars"></i></td>
+                             <td>
+                                 <select class="input-btn" size="1">
+                                     <option>Về Sản Phẩm/Dịch Vụ</option>
+                                     <option>Về Ưu Đãi Thành Viên</option>
+                                     <option>Về Tin Tuyển Dụng</option>
+                                     </select>
+                             </td>
+                         </tr>
+         
+                         <tr>
+                             <td>
+                                 <i class="sign-up-icon sign-up-icon_text far fa-file-alt"></i>
+                             </td>
+                             <td>
+                                 <textarea name="" id="" cols="50" rows="7" placeholder="Nội dung cần liên hệ"> </textarea>
+                             </td>
+                         </tr>
+         
+                         <tr>
+                             <td>
+                                 <button type="submit" value="Gửi" > Gửi</button>
+                             
+                             </td>
+                             <td></td>
+                         </tr>
+         
+                      </table>
+                 </form>
+            </div>
+         </div>
     </main>
-
     <footer>
         <div class="grid">  
             <div class="grid__row">
@@ -228,7 +315,7 @@
                         <li class="footer__item">
                             <a href="" class="footer__item-link">Phát triển</a>
                         </li>
-
+    
                     </ul>
                 </div>
                 <div class="grid__column-2-4">
@@ -290,14 +377,10 @@
                 </div>
             </div>
         </div>
-
         <div class="footer__bottom">
             <div class="grid">
                 <p class="footer__text">&#169 2021 - Bản quyền thuộc về công ty F5-Tecnology</p>
             </div>
         </div>    
     </footer>
-    <script type="text/javascript" src="/jvdangkidangnhap.js"></script>
 </body>
-<script src="./mainlw.js"></script>
-</html>

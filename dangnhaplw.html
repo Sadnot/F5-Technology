@@ -1,20 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Nhập</title>
+    <title>Đăng Ký Thành Viên</title>
     <link rel="icon" type="image/png" sizes="18x18" href="./assets/img/coollogo_com-97542231.png">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/lapweb.css">
     <script src="./jquery-3.6.0.min.js"></script>
-    <style>
-        main{
-            margin-top:35px;
-            padding-bottom: 20px;
-        }
-    </style>
+</head>
 </head>
 <body>
     <header>
@@ -98,6 +94,7 @@
                     <a href="gioithieulw.html">Giới Thiệu</a>
                     <a href="sanphamlw.html">Sản Phẩm</a>
                     <a href="tintuclw.html">Tin Tức</a>
+                    <a href="lienhelw.html">Liên Hệ</a>
                 </div>
             </div>
         </nav>    
@@ -112,28 +109,25 @@
                 <div class="container-right">
                     <div class="flex col-2 row sign-up-display" id="form">
                         <div class="left col">
-                          <!-- <div class="col-spacer">
-                            <div class="form-header"><i class="fas fa-lock icon txtglow"></i><span>Đăng Nhâp</span></div>
-                          </div> -->
                           <div id="wrapper">
-                            <form action="" id="form-login">
+                            <form onsubmit="return formValidateDN(this);" name="log-in" action="" method="post" enctype="">
                                 <h1 style="color: black;" class="form-heading">đăng nhập</h1>
                                 <div class="form-group">
                                     <i class="far fa-user"></i>
-                                    <input  type="text" class="form-input" placeholder="Tên đăng nhập">
+                                    <input  id="idlg" type="text" class="form-input" placeholder="Tên đăng nhập">
                                 </div>
                                 <div class="form-group">
                                     <i class="fas fa-key"></i>
-                                    <input type="password" class="form-input" placeholder="Mật khẩu">
-                                    <div id="eye">
+                                    <input id="pswlg"type="password" class="form-input" placeholder="Mật khẩu">
+                                    <div id="eyelg">
                                         <i class="far fa-eye"></i>
                                     </div>
                                 </div>
                                 <input style="color: rgb(0, 0, 0);" type="submit" value="Đăng nhập" class="form-submit">
-                               <!-- <div style="color: blue;"></div>  -->
+                              
                                 <font color="black" size="+1"> 
                                      <div>
-                                    <a href="#">Quên mật khẩu?</a>chưa có tài khoản <a href="#">Đăng kí!</a>  
+                                    <a href="#">qQên mật khẩu? </a>chưa có tài khoản <a href="dangkylw.html">Đăng ký!</a>  
                                   </div>
                                 </font>
                             </form>
@@ -267,7 +261,7 @@
             </div>
         </div>    
     </footer>
-    <script type="text/javascript" src="jvdangkidangnhap.js"></script> 
+    <script type="text/javascript" src="/jvdangkidangnhap.js"></script> 
 </body>
 <script src="./mainlw.js"></script>
 </html>
